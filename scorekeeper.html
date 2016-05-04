@@ -1,0 +1,243 @@
+<!doctype html>
+<!--
+Kevin Bubacz
+WEB187
+04/19/2016
+-->
+<html>
+<head>
+<title>Bowler Bear</title>
+<link href="styles.css" type="text/css" rel="stylesheet" />
+<script src="scorekeeper.js" type="text/javascript"></script>
+
+</head>
+<body>
+
+<table>
+
+<tr>	
+	<td id="name">
+		Player&nbsp;Name
+	</td>
+	<td class="frame_num" colspan="2">
+		1
+	</td>
+	<td class="frame_num" colspan="2">
+		2
+	</td>
+	<td class="frame_num" colspan="2">
+		3
+	</td>
+	<td class="frame_num" colspan="2">
+		4
+	</td>
+	<td class="frame_num" colspan="2">
+		5
+	</td>
+	<td class="frame_num" colspan="2">
+		6
+	</td>
+	<td class="frame_num" colspan="2">
+		7
+	</td>
+	<td class="frame_num" colspan="2">
+		8
+	</td>
+	<td class="frame_num" colspan="2">
+		9
+	</td>
+	<td class="frame_num" id="frame_num10" colspan="3">
+		10
+	</td>
+	<td id="total">
+		Total Score
+	</td>
+</tr>
+
+<!-----------------------------------------------------
+Boxes for each roll 
+------------------------------------------------------->
+<tr>
+	<td rowspan="2">
+		<input id="player_name" type="text" placeholder="Enter name" />
+	</td>
+	
+	<!-- Frame 1 -->
+	<td>
+		<input id="f1r1" class="roll" type="text" />
+		<input id="f1blank" class="roll" type="text" value=" " />
+	</td>
+	<td>
+		<input id="f1r2" class="roll" type="text" />
+		<input id="f1strike" class="roll" type="text" value="X" />
+		<input id="f1spare" class="roll" type="text" value="/" />
+	</td>
+	
+	<!-- Frame 2 -->
+	<td>
+		<input id="f2r1" class="roll" type="text" />
+		<input id="f2blank" class="roll" type="text" value=" " />
+	</td>
+	<td>
+		<input id="f2r2" class="roll" type="text" />
+		<input id="f2strike" class="roll" type="text" value="X" />
+		<input id="f2spare" class="roll" type="text" value="/" />
+	</td>
+	
+	<!-- Frame 3 -->
+	<td>
+		<input id="f3r1" class="roll" type="text" />
+		<input id="f3blank" class="roll" type="text" value=" " />
+	</td>
+	<td>
+		<input id="f3r2" class="roll" type="text" />
+		<input id="f3strike" class="roll" type="text" value="X" />
+		<input id="f3spare" class="roll" type="text" value="/" />
+	</td>
+	
+	<!-- Frame 4 -->
+	<td>
+		<input id="f4r1" class="roll" type="text" />
+		<input id="f4blank" class="roll" type="text" value=" " />
+	</td>
+	<td>
+		<input id="f4r2" class="roll" type="text" />
+		<input id="f4strike" class="roll" type="text" value="X" />
+		<input id="f4spare" class="roll" type="text" value="/" />
+	</td>
+	
+	<!-- Frame 5 -->
+	<td>
+		<input id="f5r1" class="roll" type="text" />
+		<input id="f5blank" class="roll" type="text" value=" " />
+	</td>
+	<td>
+		<input id="f5r2" class="roll" type="text" />
+		<input id="f5strike" class="roll" type="text" value="X" />
+		<input id="f5spare" class="roll" type="text" value="/" />
+	</td>
+	
+	<!-- Frame 6 -->
+	<td>
+		<input id="f6r1" class="roll" type="text" />
+		<input id="f6blank" class="roll" type="text" value=" " />
+	</td>
+	<td>
+		<input id="f6r2" class="roll" type="text" />
+		<input id="f6strike" class="roll" type="text" value="X" />
+		<input id="f6spare" class="roll" type="text" value="/" />
+	</td>
+	
+	<!-- Frame 7 -->
+	<td>
+		<input id="f7r1" class="roll" type="text" />
+		<input id="f7blank" class="roll" type="text" value=" " />
+	</td>
+	<td>
+		<input id="f7r2" class="roll" type="text" />
+		<input id="f7strike" class="roll" type="text" value="X" />
+		<input id="f7spare" class="roll" type="text" value="/" />
+	</td>
+	
+	<!-- Frame 8 -->
+	<td>
+		<input id="f8r1" class="roll" type="text" />
+		<input id="f8blank" class="roll" type="text" value=" " />
+	</td>
+	<td>
+		<input id="f8r2" class="roll" type="text" />
+		<input id="f8strike" class="roll" type="text" value="X" />
+		<input id="f8spare" class="roll" type="text" value="/" />
+	</td>
+	
+	<!-- Frame 9 -->
+	<td>
+		<input id="f9r1" class="roll" type="text" />
+		<input id="f9blank" class="roll" type="text" value=" " />
+	</td>
+	<td>
+		<input id="f9r2" class="roll" type="text" />
+		<input id="f9strike" class="roll" type="text" value="X" />
+		<input id="f9spare" class="roll" type="text" value="/" />
+	</td>
+	
+	<!-- Frame 10 -->
+	<td>
+		<input id="f10r1" class="roll" type="text" />
+		<input id="f10strike1" class="roll" type="text" value="X" />
+	</td>
+	<td>
+		<input id="f10r2" class="roll" type="text" />
+		<input id="f10strike2" class="roll" type="text" value="X" />
+		<input id="f10spare1" class="roll" type="text" value="/" />
+	</td>
+	<td>
+		<input id="f10r3" class="roll" type="text" />
+		<input id="f10strike3" class="roll" type="text" value="X" />
+		<input id="f10spare2" class="roll" type="text" value="/" />
+	</td>
+	
+	<!-- Total Score -->
+	<td rowspan="2">
+		<input id="totalscore" class="roll" type="text" disabled="disabled" />
+	</td>
+</tr>
+	
+<!-----------------------------------------------------
+Boxes for each frame score 
+------------------------------------------------------->
+<tr>
+	<!-- Frame 1 Score -->
+	<td colspan="2">
+		<input id="frame1_score" class="frame_score" type="text" disabled="disabled"/>
+	</td>
+	
+	<!-- Frame 2 Score -->
+	<td colspan="2">
+		<input id="frame2_score" class="frame_score" type="text" disabled="disabled" />
+	</td>
+
+	<!-- Frame 3 Score -->
+	<td colspan="2">
+		<input id="frame3_score" class="frame_score" type="text" disabled="disabled" />
+	</td>
+	
+	<!-- Frame 4 Score -->
+	<td colspan="2">
+		<input id="frame4_score" class="frame_score" type="text" disabled="disabled" />
+	</td>
+
+	<!-- Frame 5 Score -->
+	<td colspan="2">
+		<input id="frame5_score" class="frame_score" type="text" disabled="disabled" />
+	</td>
+	
+	<!-- Frame 6 Score -->
+	<td colspan="2">
+		<input id="frame6_score" class="frame_score" type="text" disabled="disabled" />
+	</td>
+
+	<!-- Frame 7 Score -->
+	<td colspan="2">
+		<input id="frame7_score" class="frame_score" type="text" disabled="disabled" />
+	</td>
+
+	<!-- Frame 8 Score -->
+	<td colspan="2">
+		<input id="frame8_score" class="frame_score" type="text" disabled="disabled" />
+	</td>
+
+	<!-- Frame 9 Score -->
+	<td colspan="2">
+		<input id="frame9_score" class="frame_score" type="text" disabled="disabled" />
+	</td>
+
+	<!-- Frame 10 Score -->
+	<td colspan="3">
+		<input id="frame10_score" class="frame_score" type="text" disabled="disabled" />
+	</td>
+</tr>
+</table>
+
+</body>
+</html>
