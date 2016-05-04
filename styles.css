@@ -1,0 +1,200 @@
+/*
+Kevin Bubacz
+WEB187
+04/19/2016
+*/
+
+body {
+	font-family:Calibri, Arial, Helvetica, sans-serif;
+	background:#F1CF1F;
+	font-weight:bold;
+}
+
+header {
+	text-align:center;
+}
+
+#logo {
+	width:20em;
+}
+
+a {
+	color:#B30104;
+	text-decoration:none;
+}
+
+#wrapper {
+	text-align:center;
+}
+
+h1 {
+	text-align:center;
+}
+
+h3 {
+	background:#1541CD;
+	padding:5px;
+	color:white;
+}
+
+strong {
+	color:#1541CD;
+}
+
+input.mainmenu {
+	width:100%;
+	height:3em;
+	font-size:1.5em;
+	background:#E4E3E3;
+	border:solid 2px red;
+	border-radius:15px;
+	background:linear-gradient(to bottom, #A7AED9, white);
+	box-shadow:5px 5px 5px #000000;
+}
+
+.mainmenu {
+	display:block;
+	margin-bottom:1em;
+	font-weight:bold;
+}
+
+table {
+	border:solid red 2px;
+	border-radius:10px;
+}
+
+table td {
+	border:solid black 1px;
+	width:2em;
+	height:2em;
+	text-align:center;
+	border-radius:5px;
+	background:linear-gradient(to bottom, #F1CF1F, white);
+}
+
+table td#name {
+	width:8em;
+	padding-left:1em;
+	padding-right:1em;
+	background:linear-gradient(to bottom, #F1CF1F, white);
+}
+
+#player_name {
+	text-align:center;
+	border:0;
+	background:#F1CF1F;
+	font-weight:bold;
+	background:linear-gradient(to bottom, #F1CF1F, white);
+}
+
+table td#total {
+	width:8em;
+}
+
+#scorecard_heading {
+	margin-left:.5em;
+}
+
+#totalscore {
+	width:8em;
+}
+
+table td.frame_num {
+	width:4.35em;
+}
+
+table td#frame_num10 {
+	width:6.7em;
+}
+
+input.roll {
+	width:2em;
+	height:2em;
+	font-size:1em;
+	font-weight:bold;
+	text-align:center;
+	border:0;
+}
+
+input.frame_score {
+	width:2em;
+	height:2em;
+	border:0;
+}
+
+input.add_player {
+	border-radius:10px;
+	padding:10px;
+	color:#B30104;
+	font-weight:bold;
+	background:linear-gradient(to bottom, #A7AED9, white);
+	margin-left:1em;
+}
+
+input:disabled {
+	background:white;
+	border-radius:5px;
+	text-align:center;
+	font-weight:bold;
+}
+
+#f1strike,  #f2strike,  #f3strike,  #f4strike,  #f5strike,  #f6strike,  #f7strike,  #f8strike,  #f9strike,   #f10strike1,  #f10strike2,  #f10strike3, #f1blank,  #f2blank,  #f3blank,  #f4blank,  #f5blank,  #f6blank,  #f7blank,  #f8blank,  #f9blank, #f1spare, #f2spare, #f3spare, #f4spare, #f5spare, #f6spare, #f7spare, #f8spare, #f9spare, #f10spare1, #f10spare2 {
+	display:none;
+}
+
+iframe {
+	width:100%;
+	height:100%;
+	border:none;
+	margin-bottom:-15px;
+	padding:0;
+	overflow:hidden;
+}
+
+#add_player3, #add_player4, #add_player5, #add_player6, #add_player7, #add_player8, #player2, #player3, #player4, #player5, #player6, #player7, #player8 {
+	display:none;
+} 
+
+ol {
+	font-weight:bold;
+	margin-bottom:2em;
+}
+
+ol li {
+	border:solid black 1px;
+	margin-bottom:1em;
+	width:14em;
+}
+
+ol img {
+	width:4em;
+	margin-right:1em;
+}
+
+@media(min-width:800px) {
+	header {
+		text-align:left;
+	}
+
+	h1 {
+		text-align:left;
+	}
+	
+	ol {
+		margin-right:2em;
+		display:block;
+	}
+	
+	#back {
+		display:block;
+		clear:both;
+	}
+	
+	.spares {
+		float:left;
+	}
+	
+	input.mainmenu {
+		width:20em;
+	}
+}
